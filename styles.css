@@ -1,0 +1,118 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/inter-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --c-green: hsl(75, 94%, 57%);
+  --c-white: hsl(0, 0%, 100%);
+  --c-grey-700: hsl(0, 0%, 20%);
+  --c-grey-800: hsl(0, 0%, 12%);
+  --c-grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+span {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--c-white);
+  background-color: var(--c-grey-900);
+}
+
+.card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 650px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--c-grey-800);
+  text-align: center;
+}
+
+img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.card h1 {
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card-location {
+  font-weight: 900;
+  display: block;
+  color: var(--c-green);
+  margin-bottom: 30px;
+}
+
+.card-bio {
+  margin-bottom: 30px;
+}
+
+.links-container {
+  padding-left: 0;
+  margin: 0;
+}
+
+.links-container li {
+  font-weight: 900;
+  background-color: var(--c-grey-700);
+  padding: 15px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.links-container li:last-child {
+  margin: 0;
+}
+
+.links-container li:hover {
+  background-color: var(--c-green);
+  color: var(--c-grey-700);
+}
